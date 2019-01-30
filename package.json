@@ -1,0 +1,39 @@
+{
+  "name": "Politico-Server",
+  "version": "1.0.0",
+  "description": "Backend of Politico. Constitutes the server, api endpoints, and authentication logic",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node ./app.js",
+    "build": "babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+    "serve": "node dist/app.js",
+    "test": "mocha ./tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeBlock-1984/Politico-Server.git"
+  },
+  "keywords": [],
+  "author": "Ihemegbulam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codeBlock-1984/Politico-Server/issues"
+  },
+  "homepage": "https://github.com/codeBlock-1984/Politico-Server#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-core": "^6.26.3",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.15.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.9"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  }
+}
