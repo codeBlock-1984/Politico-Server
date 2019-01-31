@@ -1,4 +1,4 @@
-https://travis-ci.com/codeBlock-1984/Politico-Server.svg?branch=ch-continuous-integration-with-Travis-CI-163620432
+[![Build Status](https://travis-ci.com/codeBlock-1984/Politico-Server.svg?branch=ch-continuous-integration-with-Travis-CI-163620432)](https://travis-ci.com/codeBlock-1984/Politico-Server)
 
 
 # Politico-Server
