@@ -28,6 +28,9 @@ const getOffice = (req, res) => {
 };
 
 const createOffice = (req, res) => {
+  req.body.id = officeData.length + 1;
+  officeData.push(req.body);
+  return res.send({ "status": 200, "data": officeData });
   // validate all required fields
   // if (!req.body.id) return res.send({ "status": 400, "error": "Office Id is required" });
   if (!req.body.name) {
@@ -37,9 +40,6 @@ const createOffice = (req, res) => {
     return res.send({ "status": 400, "error": "Office type is required" });
   }
 
-  req.body.id = officeData.length + 1;
-  officeData.push(req.body);
-  return res.send({ "status": 200, "data": officeData });
 };
 
 const officeController = {

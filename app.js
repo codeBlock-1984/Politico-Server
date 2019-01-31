@@ -16,3 +16,5 @@ app.use('/api/v1/offices', offices);
 app.listen(port, () => {
   console.log(`Politico server listening on port ${port}!`);
 });
+
+export default app;

@@ -30,16 +30,16 @@ const getParty = (req, res) => {
 const createParty = (req, res) => {
   // validate all required fields
   // if (!req.body.id) return res.send({ "status": 400, "error": "Party Id is required" });
+  req.body.id = partyData.length + 1;
+  partyData.push(req.body);
+  return res.send({ "status": 200, "data": partyData });
+
   if (!req.body.name) {
     return res.send({ "status": 400, "error": "Party name is required" });
   }
   if (!req.body.hqAddress) {
     return res.send({ "status": 400, "error": "Party Headquarters Address is required" });
   }
-
-  req.body.id = partyData.length + 1;
-  partyData.push(req.body);
-  return res.send({ "status": 200, "data": partyData });
 };
 
 const editParty = (req, res) => {
