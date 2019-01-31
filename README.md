@@ -1,13 +1,12 @@
-[![Build Status](https://travis-ci.com/codeBlock-1984/Politico-Server.svg?branch=ch-continuous-integration-with-Travis-CI-163620432)](https://travis-ci.com/codeBlock-1984/Politico-Server)
-
-[![Coverage Status](https://coveralls.io/repos/github/codeBlock-1984/Politico-Server/badge.svg?branch=develop)](https://coveralls.io/github/codeBlock-1984/Politico-Server?branch=develop)
-
-[![Test Coverage](https://api.codeclimate.com/v1/badges/df4eb20bb71e33ebd5be/test_coverage)](https://codeclimate.com/github/codeBlock-1984/Politico-Server/test_coverage)
-
 
 # Politico-Server
 
 Backend of Politico. Constitutes the server, api endpoints, and authentication logic
+
+### Build Status
+[![Build Status](https://travis-ci.com/codeBlock-1984/Politico-Server.svg?branch=ch-continuous-integration-with-Travis-CI-163620432)](https://travis-ci.com/codeBlock-1984/Politico-Server)
+[![Coverage Status](https://coveralls.io/repos/github/codeBlock-1984/Politico-Server/badge.svg?branch=develop)](https://coveralls.io/github/codeBlock-1984/Politico-Server?branch=develop)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/df4eb20bb71e33ebd5be/test_coverage)](https://codeclimate.com/github/codeBlock-1984/Politico-Server/test_coverage)
 
 ## Getting Started
 
