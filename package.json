@@ -7,7 +7,7 @@
     "start": "nodemon --exec babel-node ./app.js",
     "build": "babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
     "serve": "node dist/app.js",
-    "test": "mocha ./tests"
+    "test": "mocha --require @babel/register ./tests/*.js --exit"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,8 @@
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
     "babel-core": "^6.26.3",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.15.0",
     "mocha": "^5.2.0",
@@ -35,5 +37,23 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "morgan": "^1.9.1"
-  }
+  },
+  "env":{
+    "commonJS": true,
+    "node": true,
+    "mocha": true
+  },
+  "standard": {
+    "env": ["mocha"],
+    "globals": [
+      "describe",
+      "context",
+      "before",
+      "beforeEach",
+      "after",
+      "afterEach",
+      "it",
+      "expect"
+    ]
+  }  
 }
