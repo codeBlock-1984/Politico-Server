@@ -13,6 +13,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/api/v1/parties', parties);
 app.use('/api/v1/offices', offices);
 
+app.get('/', (req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/html');
+  res.end(`<h1>Politico server listening on port ${port}!</h1>`);
+});
+
 app.listen(port, () => {
   console.log(`Politico server listening on port ${port}!`);
 });
